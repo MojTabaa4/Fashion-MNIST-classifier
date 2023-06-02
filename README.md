@@ -2,11 +2,11 @@
 
 ## Introduction
 
-In this repo, I will train a feedforward neural network to classify the Fashion-MNIST dataset. The Fashion-MNIST
-dataset is a collection of 70,000 grayscale images of 28x28 pixels. The images represent 10 different classes of
-clothing items. The dataset is split into 60,000 training images and 10,000 test images.
+In this repository, I have implemented a feedforward neural network for classifying the Fashion-MNIST dataset using only
+the NumPy library. The implementation is object-oriented and includes classes for the data loader, activation functions,
+loss functions, neural layers, and the feedforward neural network itself.
 
-I will use pure NumPy library to implement the neural network. my implementation will be object-oriented,
+I have used pure NumPy library to implement the neural network. my implementation is object-oriented,
 with classes to define the data loader, activation functions, loss functions, neural layers, and the feedforward neural
 network itself.
 
@@ -39,28 +39,31 @@ The following activation functions are implemented as subclasses of `ActivationF
 
 - ### Identical
 
-    The `Identical` activation function returns the input matrix as is. It is used as the last activation function in the
-    neural network to output the predicted class probabilities.
+  The `Identical` activation function returns the input matrix as is. It is used as the last activation function in the
+  neural network to output the predicted class probabilities.
 
 - ### Relu
 
-    The `Relu` activation function returns the max of 0 and the input matrix. It is commonly used as an activation function
-    in neural networks because it is fast to compute and prevents the vanishing gradient problem.
+  The `Relu` activation function returns the max of 0 and the input matrix. It is commonly used as an activation
+  function
+  in neural networks because it is fast to compute and prevents the vanishing gradient problem.
 
 - ### LeakyRelu
 
-    The `LeakyRelu` activation function returns the max of 0 and the input matrix plus a small negative slope. It is a
-    variant of the `Relu` activation function that prevents the dying ReLU problem by allowing a small gradient for negative
-    input values.
+  The `LeakyRelu` activation function returns the max of 0 and the input matrix plus a small negative slope. It is a
+  variant of the `Relu` activation function that prevents the dying ReLU problem by allowing a small gradient for
+  negative
+  input values.
 
 - ### Sigmoid
 
-    The `Sigmoid` activation function returns the sigmoid of the input matrix. It is commonly used as an activation function
-    in binary classification problems because it maps the input values to a probability between 0 and 1.
+  The `Sigmoid` activation function returns the sigmoid of the input matrix. It is commonly used as an activation
+  function
+  in binary classification problems because it maps the input values to a probability between 0 and 1.
 
 - ### Softmax
-    The `Softmax` activation function returns the softmax of the input matrix. It is used to output the predicted class
-    probabilities in multi-class classification problems by normalizing the output values to sum up to 1.
+  The `Softmax` activation function returns the softmax of the input matrix. It is used to output the predicted class
+  probabilities in multi-class classification problems by normalizing the output values to sum up to 1.
 
 ## Cross Entropy Loss
 
