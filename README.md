@@ -6,10 +6,6 @@ In this repository, I have implemented a feedforward neural network for classify
 the NumPy library. The implementation is object-oriented and includes classes for the data loader, activation functions,
 loss functions, neural layers, and the feedforward neural network itself.
 
-I have used pure NumPy library to implement the neural network. my implementation is object-oriented,
-with classes to define the data loader, activation functions, loss functions, neural layers, and the feedforward neural
-network itself.
-
 ## Dataset
 
 The Fashion-MNIST dataset is a well-known benchmark dataset in the machine learning community. It was created as a
@@ -102,7 +98,7 @@ batch size determines the number of samples used to compute each gradient update
 
 ## Conclusion
 
-In summary, I have implemented a feedforward neural network to classify the Fashion-MNIST dataset using TensorFlow and
-NumPy libraries. I have defined classes for the data loader, activation functions, loss functions, neural layers, and
+In summary, I have implemented a feedforward neural network to classify the Fashion-MNIST dataset using NumPy library. I
+have defined classes for the data loader, activation functions, loss functions, neural layers, and
 the neural network itself. I have trained the network using backpropagation and evaluated its performance using the
 test data. The implementation can be extended and customized for other machine learning problems.
