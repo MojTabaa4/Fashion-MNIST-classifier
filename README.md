@@ -101,4 +101,4 @@ batch size determines the number of samples used to compute each gradient update
 In summary, I have implemented a feedforward neural network to classify the Fashion-MNIST dataset using NumPy library. I
 have defined classes for the data loader, activation functions, loss functions, neural layers, and
 the neural network itself. I have trained the network using backpropagation and evaluated its performance using the
-test data. The implementation can be extended and customized for other machine learning problems.
+test data. The implementation can be extended and customized for other machine learning problems
